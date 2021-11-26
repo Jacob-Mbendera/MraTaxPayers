@@ -1,0 +1,70 @@
+﻿@page
+@model MraTaxPayers.Pages.Forms.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>New Tax Payer</h1>
+
+@*<h4>MraTaxPayer</h4>*@
+<hr />
+
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="MraTaxPayer.TPIN" class="control-label"></label>
+                        <input asp-for="MraTaxPayer.TPIN" class="form-control" />
+                        <span asp-validation-for="MraTaxPayer.TPIN" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MraTaxPayer.BusinessCertificateNumber" class="control-label"></label>
+                        <input asp-for="MraTaxPayer.BusinessCertificateNumber" class="form-control" />
+                        <span asp-validation-for="MraTaxPayer.BusinessCertificateNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MraTaxPayer.TradingName" class="control-label"></label>
+                        <input asp-for="MraTaxPayer.TradingName" class="form-control" />
+                        <span asp-validation-for="MraTaxPayer.TradingName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MraTaxPayer.BusinessRegistrationDate" class="control-label"></label>
+                        <input asp-for="MraTaxPayer.BusinessRegistrationDate" class="form-control" />
+                        <span asp-validation-for="MraTaxPayer.BusinessRegistrationDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MraTaxPayer.MobileNumber" class="control-label"></label>
+                        <input asp-for="MraTaxPayer.MobileNumber" class="form-control" />
+                        <span asp-validation-for="MraTaxPayer.MobileNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MraTaxPayer.Email" class="control-label"></label>
+                        <input asp-for="MraTaxPayer.Email" class="form-control" />
+                        <span asp-validation-for="MraTaxPayer.Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MraTaxPayer.PhysicalLocation" class="control-label"></label>
+                        <input asp-for="MraTaxPayer.PhysicalLocation" class="form-control" />
+                        <span asp-validation-for="MraTaxPayer.PhysicalLocation" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MraTaxPayer.Username" class="control-label"></label>
+                        <input asp-for="MraTaxPayer.Username" class="form-control" />
+                        <span asp-validation-for="MraTaxPayer.Username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Add" class="btn btn-primary" />
+                    </div>
+                </form>
+
+            <div>
+                <a asp-page="Index">Back to List</a>
+            </div>
+        </div>
+     </div>
+ </div>
+

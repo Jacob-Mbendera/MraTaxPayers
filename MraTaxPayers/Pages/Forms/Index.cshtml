@@ -1,0 +1,82 @@
+﻿@page
+@model MraTaxPayers.Pages.Forms.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+
+<p>
+    <a class="btn btn-outline-primary" asp-page="Create">Add Tax Payer</a>
+</p>
+
+<h1>Tax Payers</h1>
+
+<table id="taxPayers" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MraTaxPayer[0].TPIN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MraTaxPayer[0].BusinessCertificateNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MraTaxPayer[0].TradingName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MraTaxPayer[0].BusinessRegistrationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MraTaxPayer[0].MobileNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MraTaxPayer[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MraTaxPayer[0].PhysicalLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MraTaxPayer[0].Username)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.MraTaxPayer) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TPIN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BusinessCertificateNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TradingName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BusinessRegistrationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhysicalLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">Edit</a> |
+                @*<a asp-page="./Details" asp-route-id="@item.id">Details</a> |*@
+                <a asp-page="./Delete" asp-route-id="@item.TPIN">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
