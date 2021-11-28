@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\MraTaxPayers\\MraTaxPayers\\MraTaxPayers.csproj": {}
+    "C:\\Projects\\MRA\\MraTaxPayers\\MraTaxPayers.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\MraTaxPayers\\MraTaxPayers\\MraTaxPayers.csproj": {
+    "C:\\Projects\\MRA\\MraTaxPayers\\MraTaxPayers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\MraTaxPayers\\MraTaxPayers\\MraTaxPayers.csproj",
+        "projectUniqueName": "C:\\Projects\\MRA\\MraTaxPayers\\MraTaxPayers.csproj",
         "projectName": "MraTaxPayers",
-        "projectPath": "C:\\Projects\\MraTaxPayers\\MraTaxPayers\\MraTaxPayers.csproj",
+        "projectPath": "C:\\Projects\\MRA\\MraTaxPayers\\MraTaxPayers.csproj",
         "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\MraTaxPayers\\MraTaxPayers\\obj\\",
+        "outputPath": "C:\\Projects\\MRA\\MraTaxPayers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",

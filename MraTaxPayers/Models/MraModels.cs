@@ -17,16 +17,28 @@ namespace MraTaxPayers.Models
         [Required]
         public string TPIN { get; set; }
         [Required]
+       [Display(Name ="Business Certificate Number")]
         public string BusinessCertificateNumber { get; set; }
+
         [Required]
+        [Display(Name = "Trading Name")]
         public string TradingName { get; set; }
+
         [Required]
+        [Display(Name = "Business Registration Date")]
         public string BusinessRegistrationDate { get; set; }
+
         [Required]
+        [Display(Name = "Mobile Number")]
         public string MobileNumber { get; set; }
+
         [Required]
+        [DataType(DataType.EmailAddress)]
+        [Display(Name = "Email Address")]
         public string Email { get; set; }
+
         [Required]
+        [Display(Name = "Physical Location")]
         public string PhysicalLocation { get; set; }
         [Required]
         public string Username { get; set; }
@@ -37,8 +49,12 @@ namespace MraTaxPayers.Models
     public class MraLogin 
     {
         [Required]
+        [DataType(DataType.EmailAddress)]
+        [Display(Name = "Email Address")]
         public string Email { get; set; }
+
         [Required]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
     }
 
@@ -52,7 +68,11 @@ namespace MraTaxPayers.Models
     {
         public string Username { get; set; }
         public string Password { get; set; }
+
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
+
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
         public string email { get; set; }
     }
@@ -69,6 +89,7 @@ namespace MraTaxPayers.Models
 
     public class MraLogout
     {
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
     }
 
